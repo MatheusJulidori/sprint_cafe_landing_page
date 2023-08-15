@@ -47,7 +47,7 @@ h2 {
 }
 
 .parallax1 {
-	background-image: url("../img/Background1.png");
+	background-image: url("../img/Background1.webp");
 }
 
 .main_img {
@@ -76,7 +76,7 @@ h2 {
 
 .container-geral{
 	height: 100vh;
-	background-image: url("../img/Background2.png");
+	background-image: url("../img/Background2.webp");
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
