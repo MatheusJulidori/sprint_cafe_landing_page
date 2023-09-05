@@ -1,6 +1,6 @@
 :root{
 	--marrom:#673923;
-	--marrom-escuro:#58311e;
+	--marrom-escuro:#2c1307;
 	--amarelo:#FFC271;
 	--verde:#4D7B5E;
 	--vermelho:#BD4851;
@@ -10,6 +10,7 @@
 html {
 	background-color: var(--marrom-escuro);
 	font-family: "Rubik", sans-serif;
+	overflow: hidden;
 }
 
 .body,
@@ -40,28 +41,41 @@ h2 {
 	margin-top: 30px;
 }
 
+h3 {
+	color: var(--amarelo);
+	font-size: 30px;
+	text-align: center;
+	margin: 0 5px;
+}
+
 .logo {
-	width: 250px;
-	height: 250px;
+	width: 500px;
+	height: 500px;
 	margin-top: 10px;
 }
 
 
 
 #copyright{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 	color: white;
 	background-color: black;
 	text-align: center;
+	padding: 5px 0;
 }
-
-
 
 
 
 /*media queries*/
 
 @media only screen and (max-width: 480px) {
-
+	.logo {
+		width: 300px;
+		height: 300px;
+		margin-top: 10px;
+	}
 	
 }
 
