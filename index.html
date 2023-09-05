@@ -19,18 +19,12 @@
 		<!-- Meta Tags -->
 
 		<meta charset="UTF-8" />
-		<meta
-			name="description"
-			content="Sprint Café - Em breve"
-		/>
+		<meta name="description" content="Sprint Café - Em breve" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta property="og:site_name" content="Sprint Café" />
 		<meta property="og:site" content="https://sprintcafe.com.br/" />
 		<meta property="og:title" content="Sprint Café" />
-		<meta
-			property="og:description"
-			content="Sprint Café - Em breve"
-		/>
+		<meta property="og:description" content="Sprint Café - Em breve" />
 
 		<meta
 			property="og:image"
@@ -53,7 +47,10 @@
 		<meta property="og:image:type" content="image/png" />
 		<meta property="og:url" content="https://sprintcafe.com.br/" />
 		<meta property="og:type" content="website" />
-		<meta name="keywords" content="Sprint Café Santa Rita do Sapucai Bicicleta Cafeteria Gourmet Bolo Saudavel Fitness" />
+		<meta
+			name="keywords"
+			content="Sprint Café Santa Rita do Sapucai Bicicleta Cafeteria Gourmet Bolo Saudavel Fitness"
+		/>
 		<meta name="author" content="Sprint Café" />
 		<meta name="robots" content="index, follow" />
 		<meta name="revisit-after" content="3 days" />
@@ -72,10 +69,7 @@
 		<meta property="twitter:card" content="summary_large_image" />
 		<meta property="twitter:url" content="https://sprintcafe.com.br/" />
 		<meta property="twitter:title" content="Sprint Café - Em breve" />
-		<meta
-			property="twitter:description"
-			content="Sprint Café - Em breve"
-		/>
+		<meta property="twitter:description" content="Sprint Café - Em breve" />
 		<meta
 			property="twitter:image"
 			content="https://sprintcafe.com.br/img/og_image.png"
@@ -111,12 +105,75 @@
 		<title>Sprint Café - Em Breve</title>
 	</head>
 	<body>
-		<div class="container">
-			<h1>Em breve</h1>
-			<img class="logo" src="img/logotipo.png" alt="Sprint Café" />
-			<h2>Em Santa Rita do Sapucaí</h2>
-			<h3>Rua Comendador Custódio Ribeiro, 43 - Centro</h3>
-		</div>
-		<div id="copyright">© 2023 Sprint Café - All Rights Reserved.</div>
+		<header class="header">
+			<!-- Logo -->
+			<a href="#" class="logo"
+				><img src="img/logo_horizontal.png" alt="Logotipo Sprint Café"
+			/></a>
+			<!-- Hamburger icon -->
+			<input class="side-menu" type="checkbox" id="side-menu" />
+			<label class="hamb" for="side-menu"
+				><span class="hamb-line"></span
+			></label>
+			<!-- Menu -->
+			<nav class="nav">
+				<ul class="menu">
+					<li><a href="#quem_somos">Quem somos</a></li>
+					<li><a href="#instagram">O café</a></li>
+					<li><a href="#local">Localização</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section id="quem_somos">
+			<div class="container_quem_somos">
+				<div class="esquerdo_quem_somos">
+					<div class="container_foto_quem_somos">
+						<img
+							src="img/quem_somos.jpeg"
+							alt="Foto virando café na peneira"
+						/>
+					</div>
+				</div>
+				<div class="direito_quem_somos">
+					<div class="container_texto">
+						<h1>Quem é a Sprint Café?</h1>
+						<p>
+							A Sprint Café nasceu de uma ideia fora do comum, que
+							busca juntar duas paixões, Café e Esporte. O ideal
+							de correr atrás de tudo que nos faz bem e juntar
+							nessa corrida pessoas de todas as tribos e todos os
+							esportes. Não é apenas sobre café, é uma corrida
+							atrás de um sonho. A Sprint Café é ponto de encontro
+							para aqueles que desejam ser servidos de um produto
+							de qualidade, um ambiente leve, descontraído, mas
+							que te estimula de forma amorosa naquilo que você
+							possui de mais precioso: A LONGEVIDADE DE VIDA, SUA
+							SAÚDE! Seu SPRINT termina quando passar pela nossa
+							porta de entrada! Seja muito bem vindo a nossa
+							cafeteria!
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="instagram">
+			<div class="container-right">
+				<h1>Em breve</h1>
+				<img>
+				<h2>Em Santa Rita do Sapucaí</h2>
+				<h3>Rua Comendador Custódio Ribeiro, 43 - Centro</h3>
+			</div>
+			<div class="container-video">
+				<video autoplay muted loop preload="metadata" width="auto" height="600px">
+					<source src="img/video_app.mp4" type="video/mp4">
+				</video>
+			</div>
+		</section>
+		<section id="local">
+			
+		</section>
+		<footer><div id="copyright">© 2023 Sprint Café - All Rights Reserved.</div></footer>
 	</body>
 </html>
