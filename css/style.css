@@ -11,7 +11,7 @@
 
 html {
 	font-family: "Rubik", sans-serif;
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body,
@@ -34,6 +34,8 @@ ul {
 	position: sticky;
 	top: 0;
 	width: 100%;
+	z-index: 100; /* Adicione um valor alto para que o cabeçalho fique sempre visível */
+	transition: top 0.3s; /* Adicione uma transição suave para animar o cabeçalho */
 }
 
 .logo {
@@ -173,9 +175,13 @@ ul {
 	font-size: 25px;
 }
 
+.welcome {
+	font-weight: bold;
+}
+
 /*-------------A CAFETERIA----------*/
 
-#instagram {
+#o_cafe {
 	background-color: var(--marrom-escuro);
 	display: flex;
 	flex-direction: row;
@@ -279,7 +285,7 @@ ul {
 	}
 
 	/*VIDEO*/
-	#instagram {
+	#o_cafe {
 		flex-direction: column;
 	}
 	.container-right {
@@ -351,7 +357,7 @@ ul {
 	}
 
 	/*VIDEO*/
-	#instagram {
+	#o_cafe {
 		flex-direction: column;
 	}
 	.container-right {
