@@ -101,8 +101,27 @@
 			rel="stylesheet"
 		/>
 
+		<!-- Owl Carousel -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+		/>
+
+		<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+
 		<!--title>Sprint Café - Em breve</!--title-->
-		<title>Sprint Café - Em Breve</title>
+		<title>Sprint Café</title>
 	</head>
 	<body>
 		<header class="header">
@@ -125,12 +144,18 @@
 			</nav>
 		</header>
 
+		<section id="motto">
+			<div class="motto-text">
+				Corra rápido, sonhe alto, saboreie cada instante
+			</div>
+		</section>
+
 		<section id="quem_somos">
 			<div class="container_quem_somos">
 				<div class="esquerdo_quem_somos">
 					<div class="container_foto_quem_somos">
 						<img
-							src="img/quem_somos.jpeg"
+							src="img/quem_somos.webp"
 							alt="Foto virando café na peneira"
 						/>
 					</div>
@@ -148,8 +173,10 @@
 							cafeteria, somos o ponto de conexão de pessoas,
 							sejam elas amantes de café, esporte ou da vida.
 							Corra rápido, sonhe alto e saboreie cada instante.
-							<br>
-						<span class="welcome">Seja bem vindo ao Sprint Café.</span>
+							<br />
+							<span class="welcome"
+								>Seja bem vindo ao Sprint Café.</span
+							>
 						</p>
 					</div>
 				</div>
@@ -157,28 +184,72 @@
 		</section>
 
 		<section id="o_cafe">
-			<div class="container-right">
-				<h1>Em breve</h1>
-				<img />
-				<h2>Em Santa Rita do Sapucaí</h2>
-				<h3>Rua Comendador Custódio Ribeiro, 43 - Centro</h3>
+			<h1>Conheça nosso cardápio</h1>
+			<div class="owl-carousel owl-theme owl-loaded">
+				<div class="owl-stage-outer">
+					<div class="owl-stage">
+						<div class="owl-item">
+							<img src="./img/carrossel.jpeg" alt="" />
+						</div>
+						<div class="owl-item">
+							<img src="./img/carrossel2.jpeg" alt="" />
+						</div>
+						<div class="owl-item">
+							<img src="./img/carrossel3.jpeg" alt="" />
+						</div>
+						<div class="owl-item">
+							<img src="./img/carrossel4.jpeg" alt="" />
+						</div>
+						<div class="owl-item">
+							<img src="./img/carrossel5.jpeg" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="owl-controls"></div>
 			</div>
-			<div class="container-video">
-				<video
-					autoplay
-					muted
-					loop
-					preload="metadata"
-					width="auto"
-					height="600px"
-				>
-					<source src="img/video_app.mp4" type="video/mp4" />
-				</video>
+			<div>
+				<h3>
+					<a
+						href="./assets/Sprint_Cafe_CARDAPIO_cafeteria_impressao.pdf"
+						target="_blank"
+						class="btn"
+						>Cardápio digital</a
+					>
+				</h3>
 			</div>
 		</section>
-		<section id="local"></section>
+
+		<section id="local">
+			<div class="container_local">
+				<div class="esquerdo_local">
+					<div class="container_texto">
+						<h1>Venha saborear essa experiência!</h1>
+						<p>Rua Comendador Custódio Ribeiro, 43 - Centro</p>
+						<p>Santa Rita do Sapucaí - MG</p>
+						<div class="horario_funcionamento">
+							<p>Terça à Sexta 12h às 19h</p>
+							<p>Sábado 9h - 19h</p>
+							<p>Domingo 9h - 14h</p>
+						</div>
+						<h3>
+							<a
+								href="https://www.google.com/maps/dir//sprint+caf%C3%A9/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x94cba3d346fea395:0xd57dda1cb3dc604c?sa=X&ved=2ahUKEwjrxbiG-YeDAxV6lJUCHfY0AJkQ9Rd6BAhGEAA"
+								target="_blank"
+								class="btn"
+								>Ver no Maps</a
+							>
+						</h3>
+					</div>
+				</div>
+				<div class="direito_local">
+					<div class="container_foto_local">
+						<img src="./img/faixada.webp" alt="Foto do local" />
+					</div>
+				</div>
+			</div>
+		</section>
 		<footer>
-			<div id="copyright">© 2023 Sprint Café - All Rights Reserved.</div>
+			<div id="copyright">© 2023-2024 Sprint Café - All Rights Reserved.</div>
 		</footer>
 		<script src="/js/script.js"></script>
 	</body>
