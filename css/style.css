@@ -294,6 +294,7 @@ ul {
 	align-items: center;
 	text-align: center;
 	padding: 50px 0;
+	overflow: hidden;
 }
 
 .container_local {
